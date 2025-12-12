@@ -16,9 +16,9 @@ cnx = st.connection("snowflake")
 session = cnx.session()
 
 smoothiefroot_response = requests.get("https://my.smoothiefroot.com/api/fruit/watermelon")
-st.text(fruityvice_response).json())
-fv_df = st.dataframe(data=smoothiefroot_response.json(), use_container_width=True)
-my_dataframe = session.table("smoothies.public.fruit_options").select(col('FRUIT_NAME'),col('SEARCH_ON'))
+st.text(smoothiefroot_response).json())
+#fv_df = st.dataframe(data=smoothiefroot_response.json(), use_container_width=True)
+#my_dataframe = session.table("smoothies.public.fruit_options").select(col('FRUIT_NAME'),col('SEARCH_ON'))
 # st.dataframe(data=my_dataframe, use_container_width=True)
 # st.stop()
 
